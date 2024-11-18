@@ -5,8 +5,8 @@ namespace SchoolManagement{
         {
             Controller sManagement = new Controller();
             Console.WriteLine("\tSchool Management System");
-            Console.WriteLine("---------------------------------");
-            while(1==1)
+            Console.WriteLine("------------------------------");
+            while(true)
             {
                 Console.WriteLine("Choose an option:\n");
                 Console.WriteLine("1. Add new Student");
