@@ -1,5 +1,5 @@
 namespace SchoolManagement{
-    public class Person{
+    public abstract class Person{
         private string NAME = "";
         private int ID;
 

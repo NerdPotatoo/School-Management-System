@@ -1,14 +1,14 @@
 namespace SchoolManagement{
     public class TeacherModel : Person{
-        private string SUBJECT = "";
-        public TeacherModel(string name, int id, string subject) : base(name,id)
+        private string COURSE = "";
+        public TeacherModel(string name, int id, string course) : base(name,id)
         {
-            Subject = subject;
+            Course = course;
         }
 
-        public string Subject{
-            get{return SUBJECT;}
-            set{SUBJECT = value;}
+        public string Course{
+            get{return COURSE;}
+            set{COURSE = value;}
         }
     }
 }
