@@ -6,7 +6,7 @@ namespace SchoolManagement{
             Console.Clear();
             Controller sManagement = new Controller();
             Console.WriteLine("\tSchool Management System");
-        Console.WriteLine("       |------------------------|\n\n");
+            Console.WriteLine("       |------------------------|\n\n");
             while(true)
             {
                 Console.WriteLine("Choose an option:\n");

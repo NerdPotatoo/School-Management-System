@@ -13,7 +13,7 @@ namespace SchoolManagement{
             var className = Console.ReadLine();
             StudentModel stud = new StudentModel(name, id, className);
             StudentList.Add(stud);
-            Console.WriteLine($"{name} Added to the Student List\n\n\n");
+            Console.WriteLine($"{name} Added to the Student List\n\n");
         }
          public void AddTeacher(){
             Console.Clear();
@@ -25,7 +25,7 @@ namespace SchoolManagement{
             var course = Console.ReadLine();
             TeacherModel teach = new TeacherModel(name, id, course);
             TeacherList.Add(teach);
-            System.Console.WriteLine($"{name} Added to the Teacher List\n\n\n");
+            System.Console.WriteLine($"{name} Added to the Teacher List\n\n");
          }
         public void DeleteStudent(){
             Console.Clear();
@@ -34,6 +34,7 @@ namespace SchoolManagement{
             var dltUser = StudentList.FirstOrDefault(stud => stud.Id == id);
             if(dltUser != null) StudentList.Remove(dltUser);
             Console.WriteLine($"{dltUser.Name} Removed");
+            Console.WriteLine("<----------------->\n\n");
         }
         public void DeleteTeacher(){
             Console.Clear();
@@ -42,6 +43,7 @@ namespace SchoolManagement{
             var dltUser = TeacherList.FirstOrDefault(teach => teach.Id == id);
             if(dltUser != null) TeacherList.Remove(dltUser);
             Console.WriteLine($"{dltUser.Name} Removed");
+            Console.WriteLine("<----------------->\n\n");
         }
         public void StudentDetails(){
             Console.Clear();
@@ -50,6 +52,7 @@ namespace SchoolManagement{
             {
                 Console.WriteLine($"Name: {stud.Name}\tID: {stud.Id}\tClass: {stud.Class}");
             }
+            Console.WriteLine("<----------------->\n\n");
         }
         public void TeacherDetails(){
             Console.Clear();
@@ -58,6 +61,7 @@ namespace SchoolManagement{
             {
                 Console.WriteLine($"Name: {teach.Name}\tID: {teach.Id}\tCourse: {teach.Course}");
             }
+            Console.WriteLine("<----------------->\n\n");
         }
     }
 }
